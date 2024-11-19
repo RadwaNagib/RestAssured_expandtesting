@@ -16,28 +16,7 @@ import static org.hamcrest.Matchers.equalTo;
 
 public class NotesMethod {
 
-//    public static CreateNotes createNotes;
    public static Update_exsit_note updateExsitNote;
-//
-//    //creates a new note with the given title, description, category and user id.
-//    public static String create_Note(String token) throws IOException {
-//
-//        createNotes = Utility.readJsonFromFile("src/main/resources/testData.notes/note.json", CreateNotes.class);
-//        log.info(String.format("User notes {}:%s", createNotes));
-//
-//        Response response = given(requestSpec)
-//                .header("x-auth-token", token)
-//                .log().uri() // Log the full URI
-//                .log().headers() // Log headers for debugging
-//                .body(createNotes)
-//                .when()
-//                .post("/notes")
-//                .then()
-//                .log().all().statusCode(200)
-//                .body("message", equalTo("Note successfully created"))
-//                .extract().response();
-//        return response.jsonPath().getString("data.id");
-//    }
 
     //Retrieve a list of notes for the authenticated user
     public static Response get_All_Notes(String token) throws IOException {
